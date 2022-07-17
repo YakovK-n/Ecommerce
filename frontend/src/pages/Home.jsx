@@ -2,11 +2,9 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div>
-      <header>
-        <a href="/">ecommerce</a>
-      </header>
-      <main>list products</main>
+    <div style={{marginTop: "80px"}}>
+      <h3>PUSH LOGIN FOR</h3>
+      <h3>START YOUR SHOPPING</h3>
     </div>
   );
 };

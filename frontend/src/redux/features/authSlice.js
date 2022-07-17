@@ -6,8 +6,7 @@ export const login = createAsyncThunk(
   async ({ formValue, navigate }, { rejectWithValue }) => {
     try {
       const response = await api.signIn(formValue);
-      //toast.success("Login Successfully");
-      navigate("/");
+      navigate("/main");
       return response.data;
     } catch (err) {
       return rejectWithValue(err.response.data);
@@ -36,6 +35,15 @@ const authSlice = createSlice({
     loading: false,
   },
 
+  reducers: {
+    setUser: (state, action) => {
+      state.user = action.payload;
+    },
+    setLogout: (state, action) => {
+      localStorage.clear();
+      state.user = null;
+    },
+  },
   extraReducers: {
     [login.pending]: (state, action) => {
       state.loading = true;
@@ -63,5 +71,7 @@ const authSlice = createSlice({
     },
   },
 });
+
+export const { setUser, setLogout } = authSlice.actions;
 
 export default authSlice.reducer;
