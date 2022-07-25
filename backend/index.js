@@ -11,7 +11,7 @@ dotenv.config();
 app.use(express.json());
 app.use(cors());
 
-app.use("/users", userRouter); // http://localhost:4000/users/signup
+app.use("/users", userRouter);
 
 const PORT = process.env.PORT || 4000;
 

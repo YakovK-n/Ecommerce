@@ -19,13 +19,13 @@ const data = {
         image: 'https://www.bfgcdn.com/1500_1500_90/023-0863-0111/hoka-mach-4-running-shoes.jpg',
       },
       {
-        id: '3',
+        id: '4',
         name: 'Adidas',
         price: 700,
         image: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/8c687d94b5654d4bb435a97f00d5a475_9366/Grand_Court_Shoes_White_F36392_01_standard.jpg',
       },
       {
-        id: '3',
+        id: '5',
         name: 'Puma',
         price: 800,
         image: 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_450,h_450/global/376661/02/sv01/fnd/IND/fmt/png',
