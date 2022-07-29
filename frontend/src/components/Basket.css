@@ -3,7 +3,7 @@
   justify-content: space-between;
 }
 .block {
-  width: 30%;
+  width: 25%;
   background-color: #e0e0e0;
   padding: 1rem;
   margin: 0.5rem;
@@ -18,7 +18,7 @@
   }
 }
 img.small {
-  max-height: 14rem;
+  max-height: 12rem;
 }
 button {
   

@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import cors from "cors";
 import userRouter from "./routes/user.js";
 
+
 const app = express();
 dotenv.config();
 

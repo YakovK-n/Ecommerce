@@ -27,7 +27,7 @@ const Header = () => {
     <MDBNavbar fixed="top" expand="lg" style={{ backgroundColor: "#f0e6ea" }}>
       <MDBContainer>
         <MDBNavbarBrand
-          href="/"
+          href="#/"
           style={{ color: "#606080", fontWeight: "600", fontSize: "22px" }}
         >
           Boot market
@@ -53,8 +53,9 @@ const Header = () => {
                 <p className="header-text">Home</p>
               </MDBNavbarLink>
             </MDBNavbarItem>
-            {user?.result?._id && (
+            {user?.result?.name === 'Admin               ' && (
               <>
+              {/* {console.log()} */}
                 <MDBNavbarItem>
                   <MDBNavbarLink href="/addBoots">
                     <p className="header-text">Add Boots</p>

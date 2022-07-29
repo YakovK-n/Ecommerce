@@ -9,6 +9,7 @@ import { useDispatch } from "react-redux";
 import { setUser } from "./redux/features/authSlice";
 import AddEditBoots from "./pages/AddEditBoots";
 import Main from "./components/Main";
+import Admin from "./components/Admin";
 
 function App() {
   const dispatch = useDispatch();
@@ -28,6 +29,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/addBoots" element={<AddEditBoots />} />
           <Route path="/editBoots/:id" element={<AddEditBoots />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </div>
     </BrowserRouter>
