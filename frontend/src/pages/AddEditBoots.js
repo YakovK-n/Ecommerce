@@ -23,11 +23,9 @@ const AddEditBoots = () => {
       image: newBoots.image,
       price: newBoots.price,
     };
-    axios.post("http://localhost:4000/newBoots", createBoots);
+    axios.post("/products", createBoots);
     console.log(newBoots)
   };
-
-  // const { name, image, price } = newBoots;
 
   return (
     <div style={{ marginTop: "100px" }}>
